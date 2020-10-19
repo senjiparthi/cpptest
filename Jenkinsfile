@@ -7,12 +7,12 @@ pipeline {
                 checkout scm
             }
         }
-        stage ( 'Build' ) {
+        stage ('Test') {
             steps {
                 sh 'ls'
             }
     }
-        stage ('Build'){
+        stage ('Test1'){
             steps {
                 sh 'pwd'
             }
