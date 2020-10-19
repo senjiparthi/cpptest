@@ -12,9 +12,9 @@ pipeline {
                 sh 'g++ -o Hello HelloPlanet.cpp'
             }
     }
-        stage ('Test1'){
+        stage ('Run'){
             steps {
-                sh 'pwd'
+                sh './Hello'
             }
         }
 
