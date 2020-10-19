@@ -7,9 +7,9 @@ pipeline {
                 checkout scm
             }
         }
-        stage ('Test') {
+        stage ('Build') {
             steps {
-                sh 'ls'
+                sh 'g++ -o Hello HelloPlanet.cpp'
             }
     }
         stage ('Test1'){
