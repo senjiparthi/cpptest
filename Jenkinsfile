@@ -14,13 +14,8 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                sh 'g++ -o Hello HelloPlanet.cpp'
+                sh 'echo Hello Planet'
             }
         }
-        stage ('Run'){
-            steps {
-                sh './Hello'
-            }
-        }       
     }
 }
