@@ -22,7 +22,6 @@ pipeline {
                 sh './Hello'
             }
         }
-    }
     
         stage ('Coverity Scan'){
             steps {
@@ -44,5 +43,5 @@ pipeline {
                 sh 'curl -u $NEXUS_TOKEN_USR:$NEXUS_TOKEN_PSW --upload-file Hello https://nexus.avionics.io:8443/repository/cpp/Hello'
             }
         }
-
+    }
 }
