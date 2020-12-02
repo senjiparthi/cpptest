@@ -24,7 +24,6 @@ pipeline {
         }
     }
     
-    stages {
         stage ('Coverity Scan'){
             steps {
                 sh './cov-build --dir /var/jenkins_home/workspace/testcpp/report/ g++ -o Hello /var/jenkins_home/workspace/testcpp/HelloPlanet.cpp'
@@ -46,6 +45,4 @@ pipeline {
             }
         }
 
-
-}
 }
