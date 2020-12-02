@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'echo Hello Planet'
+                sh 'yum -y groupinstall "Development Tools"'
             }
         }
     }
