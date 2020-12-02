@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'yum -y groupinstall "Development Tools"'
+                sh 'yum -y install gcc*'
             }
         }
     }
