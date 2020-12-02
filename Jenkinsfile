@@ -10,6 +10,7 @@ pipeline {
         stage ('Build') {
             steps {
                 sh 'yum -y install gcc*'
+                sh 'yum -y install man-pages'
                 sh 'gcc –-version'
             }
         }
